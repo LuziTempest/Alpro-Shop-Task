@@ -55,7 +55,7 @@ export default function ProductDetailPage() {
 
         <div className="mt-6">
           <Button
-            onClick={() =>
+            onClick={() => {
               addItem({
                 id: data.id,
                 title: data.title,
@@ -63,7 +63,8 @@ export default function ProductDetailPage() {
                 image: data.image,
                 quantity: 1,
               })
-            }
+              alert("Produk berhasil ditambahkan ke cart!")
+            }}
           >
             Add to Cart
           </Button>
